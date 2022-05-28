@@ -21,7 +21,7 @@
         "_id": 3,
         "name": "Belt",
         "description": "The steering system is used for changing the direction of the vehicle. The major requirements in any steering mechanism are that it should be precise and easy to handle and that the front wheels should have a tendency to return to the straight-ahead position after a turn.",
-        "img": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyJTIwcGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "img": "https://images.unsplash.com/photo-1527383418406-f85a3b146499?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyJTIwcGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         "minimum_order_quantity": 1500,
         "available_quantity": 8000,
         "price": 50
