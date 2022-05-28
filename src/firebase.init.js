@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCcJYTvSIMIhRF-EcKJvx8-CT-2zoGB1w8",
-    authDomain: "zara-car-manufacturer-house.firebaseapp.com",
-    projectId: "zara-car-manufacturer-house",
-    storageBucket: "zara-car-manufacturer-house.appspot.com",
-    messagingSenderId: "331935506148",
-    appId: "1:331935506148:web:7a97e7c718b34714b896f1"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
 };
 
 // Initialize Firebase

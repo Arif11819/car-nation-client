@@ -10,7 +10,7 @@ const ContactUs = () => {
             </div>
             <div className='mb-5'>
                 <input className='w-80 mb-2 rounded pl-3 h-[40px]' type="text" placeholder='Email Address' /><br />
-                <input className='w-80 mb-2 rounded pl-3 h-[40px]' type="text" placeholder='Subject' /> <br />
+                <input className='w-80 mb-2 rounded pl-3 h-[40px]' type="text" placeholder='Product Name' /> <br />
                 <textarea className='w-80 mb-2 rounded pl-3 h-[100px]' type="text" placeholder='Your message' />
             </div>
             <button className='btn btn-primary'>Submit</button>
