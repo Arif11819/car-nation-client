@@ -10,9 +10,9 @@ const Part = ({ part }) => {
             <div class="card-body items-center text-center">
                 <h2 class="card-title font-bold">{_id}.  {name}</h2>
                 <p>{description}</p>
-                <h2 className='text-1xl text-primary font-bold'>Minimum Order Quantity: {minimum_order_quantity}</h2>
-                <h2 className='text-1xl text-primary font-bold'>Available Quantity: {available_quantity}</h2>
-                <h2 className='text-1xl text-primary font-bold'>Price: ${price}</h2>
+                <h2 className='text-1xl font-bold'>Minimum Order Quantity: {minimum_order_quantity}</h2>
+                <h2 className='text-1xl font-bold'>Available Quantity: {available_quantity}</h2>
+                <h2 className='text-1xl font-bold'>Price: ${price}</h2>
                 <div class="card-actions">
                     <button class="btn btn-primary">Purchase Now</button>
                 </div>
