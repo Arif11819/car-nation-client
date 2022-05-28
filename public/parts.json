@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": "Gear Lever",
+        "description": "The engine’s electrical system provides energy to operate a starting motor and to power all the accessories. The main components of the electrical system are a battery, an alternator, a starting motor, an ignition coil, and a heater.",
+        "img": "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwcGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "minimum_order_quantity": 2000,
+        "available_quantity": 4000,
+        "price": 100
+    },
+    {
+        "_id": 2,
+        "name": "Wheel",
+        "description": "Due to the combustion of fuel with air inside the cylinder, the temperature of the engine parts increases. This increase in temperature directly affects the engine performance and the life of the engine parts.",
+        "img": "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyJTIwcGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "minimum_order_quantity": 1000,
+        "available_quantity": 5000,
+        "price": 120
+    },
+    {
+        "_id": 3,
+        "name": "Belt",
+        "description": "The steering system is used for changing the direction of the vehicle. The major requirements in any steering mechanism are that it should be precise and easy to handle and that the front wheels should have a tendency to return to the straight-ahead position after a turn.",
+        "img": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyJTIwcGFydHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "minimum_order_quantity": 1500,
+        "available_quantity": 8000,
+        "price": 50
+    },
+    {
+        "_id": 4,
+        "name": "Jump Start",
+        "description": "The main purpose of the bodywork is to provide accommodation for the driver and passengers, with suitable protection against wind and weather. The degree of comfort provided depends upon the type of car and its cost.",
+        "img": "https://images.unsplash.com/photo-1597766325363-f5576d851d6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGNhciUyMHBhcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "minimum_order_quantity": 500,
+        "available_quantity": 5000,
+        "price": 80
+    },
+    {
+        "_id": 5,
+        "name": "Gear",
+        "description": "The main function of the transmission is to provide the necessary variation to the torque applied by the engine to the wheels. This is achieved by changing the gearing ratio between the engine output shaft and the drive shaft.",
+        "img": "https://images.unsplash.com/photo-1633281256183-c0f106f70d76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fGNhciUyMHBhcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "minimum_order_quantity": 400,
+        "available_quantity": 6000,
+        "price": 100
+    },
+    {
+        "_id": 6,
+        "name": "BMW Key",
+        "description": "The chassis of an automobile has the frame, suspension system, axles, and wheel as the main components. The frame could be in the form of a conventional chassis or unit construction may be adopted.",
+        "img": "https://images.unsplash.com/photo-1585336261176-3e8d838e86e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fGNhciUyMHBhcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "minimum_order_quantity": 1000,
+        "available_quantity": 5000,
+        "price": 100
+    }
+]
