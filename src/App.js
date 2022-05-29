@@ -12,6 +12,8 @@ import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Purchase from './Pages/Purchase/Purchase';
 import Navbar from './Pages/Shared/Navbar';
 import NotFound from './Pages/Shared/NotFound';
+import Review from './Review/Review';
+import ContactUs from './Pages/ContactUs';
 function App() {
   return (
     <div>
@@ -21,6 +23,8 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/review' element={<Review></Review>}></Route>
+        <Route path='/contactUs' element={<ContactUs></ContactUs>}></Route>
         <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/parts/:partsId' element={
           <RequireAuth>

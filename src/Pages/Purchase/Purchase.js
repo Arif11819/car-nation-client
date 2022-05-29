@@ -1,14 +1,22 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
+import auth from '../../firebase.init';
 import usePurchase from '../../hooks/usePurchase';
 
 
 const Purchase = () => {
     const { partsId } = useParams();
     const [parts] = usePurchase(partsId);
+    const [user] = useAuthState(auth);
+
+    const handlePlaceOrder = event => {
+        event.preventDefault();
+
+    }
 
     return (
-        <div>
+        <div className='my-6'>
             <div class="card bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src={parts.img} alt="Shoes" class="rounded-xl" />
@@ -21,13 +29,13 @@ const Purchase = () => {
                     <h2 className='text-1xl font-bold'>Price: ${parts.price}</h2>
                 </div>
             </div>
-            <div className='flex flex-col items-center mt-20'>
-                <input type="text" className="input input-bordered input-primary w-2/6 block mt-2" />
-                <input type="text" className="input input-bordered input-primary w-2/6 block mt-2" />
+            <form onSubmit={handlePlaceOrder} className='flex flex-col items-center mt-20'>
+                <input type="text" value={user?.displayName} className="input input-bordered input-primary w-2/6 block mt-2" />
+                <input type="text" value={user?.email} className="input input-bordered input-primary w-2/6 block mt-2" />
                 <input type="text" className="input input-bordered input-primary w-2/6 block mt-2" />
                 <input type="text" className="input input-bordered input-primary w-2/6 block mt-2" />
                 <button className='btn btn-primary mt-3'>Order Now</button>
-            </div>
+            </form>
         </div>
     );
 };

@@ -16,11 +16,10 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/blogs'>Blogs</Link></li>
-        <li><Link to='/reviews'>Reviews</Link></li>
+        <li><Link to='/review'>Reviews</Link></li>
         <li><Link to='/myportfolio'>My Portfolio</Link></li>
         {
             user && <>
-                <li><Link to='/parts'>Purchase</Link></li>
                 <li><Link to='/manageparts'>Manage Parts</Link></li>
             </>
         }
