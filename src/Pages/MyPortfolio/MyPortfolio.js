@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const MyPortfolio = () => {
     return (
         <div className='mx-20 my-20'>
-            <h2 className='text-center text-5xl text-red-300 my-14 font-sans font-bold'>My Portfolio</h2>
+            <h2 className='text-center text-5xl text-red-500 my-14 font-sans font-bold'>My Portfolio</h2>
             <h2 className='text-2xl text-purple-500 font-sans font-bold'>Name: Md.Ariful Islam</h2>
             <h2 className='text-2xl text-purple-500 font-sans font-bold mt-4'>Email Address: arifulislam11819@gmail.com</h2>
             <h2 className='text-2xl text-purple-500 font-sans font-bold mt-4'>Educational Background:</h2>

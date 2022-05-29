@@ -15,7 +15,7 @@ const ManagePart = ({ part }) => {
                 <img src={img} alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-                <h2 class="card-title font-bold">{_id}.  {name}</h2>
+                <h2 class="card-title font-bold">{name}</h2>
                 <p>{description}</p>
                 <h2 className='text-1xl font-bold'>Minimum Order Quantity: {minimum_order_quantity}</h2>
                 <h2 className='text-1xl font-bold'>Available Quantity: {available_quantity}</h2>

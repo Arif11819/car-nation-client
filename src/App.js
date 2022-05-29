@@ -18,6 +18,7 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import AddAReview from './Pages/Dashboard/AddAReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
+import Users from './Pages/Dashboard/Users';
 function App() {
   return (
     <div>
@@ -34,6 +35,7 @@ function App() {
           <Route index element={<MyOrders></MyOrders>}></Route>
           <Route path='addreview' element={<AddAReview></AddAReview>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='users' element={<Users></Users>}></Route>
         </Route>
         <Route path='/parts/:partsId' element={
           <RequireAuth>
