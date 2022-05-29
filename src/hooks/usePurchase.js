@@ -4,7 +4,7 @@ const usePurchase = partsId => {
     const [parts, setParts] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/parts/${partsId}`;
+        const url = `https://secure-fjord-78595.herokuapp.com/parts/${partsId}`;
 
         fetch(url)
             .then(res => res.json())
