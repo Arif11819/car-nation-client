@@ -2,7 +2,7 @@
 
 This website we sell different types of car manufacturer product that is very important to a car owner or car houses.In this website home page have a navbar , banner , parts section,customer review section,business summery section,contact us section,footer and one more extra section.
 
-Live site : https://zara-fashion-house.web.app/
+Live site : https://zara-car-manufacturer-house.web.app/
 
 ## Deployment
 
