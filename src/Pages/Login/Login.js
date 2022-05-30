@@ -42,8 +42,8 @@ const Login = () => {
     };
 
     return (
-        <div className='flex h-screen justify-center items-center'>
-            <div className="card w-96 bg-base-100 shadow-xl">
+        <div className='flex h-screen justify-center items-center '>
+            <div className="card w-96 bg-base-100 shadow-xl bg-gradient-to-r from-cyan-500 to-blue-500">
                 <div className="card-body">
                     <h2 className="text-center text-2xl font-bold">Login</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -51,7 +51,7 @@ const Login = () => {
 
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text">Email</span>
+                                <span className="label-text font-semibold">Email</span>
                             </label>
                             <input
                                 type="email"
@@ -75,7 +75,7 @@ const Login = () => {
                         </div>
                         <div className="form-control w-full max-w-xs">
                             <label className="label">
-                                <span className="label-text">Password</span>
+                                <span className="label-text font-semibold">Password</span>
                             </label>
 
                             <input
@@ -103,9 +103,9 @@ const Login = () => {
                         {signInError} <br />
                         <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
-                    <p><small className='flex justify-center mt-2'>New to Our Side? <Link className='text-secondary pl-' to='/signup'>Create new account</Link></small></p>
+                    <p><small className='flex justify-center mt-2 font-semibold'>New to Our Side? <Link className='font-semibold text-rose-50 px-2' to='/signup'>Create new account</Link></small></p>
 
-                    <div className="divider">OR</div>
+                    <div className="divider font-semibold">OR</div>
                     <button
                         onClick={() => signInWithGoogle()}
                         className="btn btn-outline">

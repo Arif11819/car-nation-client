@@ -14,7 +14,7 @@ const Parts = () => {
     }
     return (
         <div className='my-28'>
-            <h2 className='text-3xl flex justify-center items-center font-bold font-sans bg-info h-16'>Our Car Parts</h2>
+            <h2 className='text-5xl my-10 flex justify-center items-center font-bold font-sans  text-primary h-16'>Our Car Parts</h2>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2'>
                 {
                     sliceParts.map(part => <Part

@@ -8,8 +8,9 @@ const Part = ({ part }) => {
     const handleNavigateToPurchase = (id) => {
         navigate(`/parts/${id}`);
     }
+
     return (
-        <div class="card bg-base-100 shadow-xl">
+        <div class="card bg-base-100 shadow-xl bg-gradient-to-r from-cyan-500 to-blue-500">
             <figure class="px-10 pt-10">
                 <img src={img} alt="Shoes" class="rounded-xl" />
             </figure>
