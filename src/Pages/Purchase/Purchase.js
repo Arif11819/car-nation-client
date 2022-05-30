@@ -17,12 +17,12 @@ const Purchase = () => {
 
     return (
         <div className='my-6'>
-            <div class="card bg-base-100 shadow-xl bg-gradient-to-r from-cyan-500 to-blue-500">
-                <figure class="px-10 pt-10">
-                    <img src={parts.img} alt="Shoes" class="rounded-xl" />
+            <div className="card bg-base-100 shadow-xl bg-gradient-to-r from-cyan-500 to-blue-500">
+                <figure className="px-10 pt-10">
+                    <img src={parts.img} alt="Shoes" className="rounded-xl" />
                 </figure>
-                <div class="card-body items-center text-center">
-                    <h2 class="card-title font-bold">{parts.name}</h2>
+                <div className="card-body items-center text-center">
+                    <h2 className="card-title font-bold">{parts.name}</h2>
                     <p>{parts.description}</p>
                     <h2 className='text-1xl font-bold'>Minimum Order Quantity: {parts.minimum_order_quantity}</h2>
                     <h2 className='text-1xl font-bold'>Available Quantity: {parts.available_quantity}</h2>
