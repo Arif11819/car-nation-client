@@ -10,6 +10,6 @@ const usePurchase = partsId => {
             .then(res => res.json())
             .then(data => setParts(data));
     }, [partsId]);
-    return [parts];
+    return [parts, setParts];
 }
 export default usePurchase;

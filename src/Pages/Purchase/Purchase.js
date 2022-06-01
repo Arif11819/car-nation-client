@@ -1,19 +1,11 @@
-import React from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
 import { useParams } from 'react-router-dom';
-import auth from '../../firebase.init';
 import usePurchase from '../../hooks/usePurchase';
+import BookingModal from './BookingModal';
 
 
 const Purchase = () => {
     const { partsId } = useParams();
-    const [parts] = usePurchase(partsId);
-    const [user] = useAuthState(auth);
-
-    const handlePlaceOrder = event => {
-        event.preventDefault();
-
-    }
+    const [parts, setParts] = usePurchase(partsId);
 
     return (
         <div className='my-6'>
@@ -25,18 +17,17 @@ const Purchase = () => {
                     <h2 className="card-title font-bold">{parts.name}</h2>
                     <p>{parts.description}</p>
                     <h2 className='text-1xl font-bold'>Minimum Order Quantity: {parts.minimum_order_quantity}</h2>
-                    <h2 className='text-1xl font-bold'>Available Quantity: {parts.available_quantity}</h2>
+                    <h2 id='available-quantity' className='text-1xl font-bold'>Available Quantity: {parts.available_quantity}</h2>
                     <h2 className='text-1xl font-bold'>Price: ${parts.price}</h2>
+                    <div>
+                        <label for="booking-modal"
+                            onClick={() => setParts(parts)}
+                            className="btn btn-primary flex justify-center items-center">Order Now
+                        </label>
+                    </div>
                 </div>
+                {parts && <BookingModal parts={parts}></BookingModal>}
             </div>
-            <form onSubmit={handlePlaceOrder} className='flex flex-col items-center mt-20'>
-                <h2 className='text-center text-5xl text-red-500 my-4 font-sans font-bold'>Please Order</h2>
-                <input type="text" disabled value={user?.displayName} className="input input-bordered input-primary w-2/6 block mt-2" />
-                <input type="text" disabled value={user?.email} className="input input-bordered input-primary w-2/6 block mt-2" />
-                <input type="text" className="input input-bordered input-primary w-2/6 block mt-2" />
-                <input type="text" className="input input-bordered input-primary w-2/6 block mt-2" />
-                <button className='btn btn-primary mt-3'>Order Now</button>
-            </form>
         </div>
     );
 };

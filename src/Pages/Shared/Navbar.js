@@ -3,9 +3,11 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useAdmin from '../../hooks/useAdmin';
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user);
 
     const logout = () => {
         signOut(auth);
@@ -23,6 +25,7 @@ const Navbar = () => {
             user && <>
                 <li className='font-bold font-sans text-amber-300'><Link to='/dashboard'>Dashboard</Link></li>
                 <li className='font-bold font-sans text-amber-300'><Link to='/manageparts'>Manage Parts</Link></li>
+                {admin && <li className='font-bold font-sans text-amber-300'><Link to='/addproduct'>Add Product</Link></li>}
             </>
         }
         {

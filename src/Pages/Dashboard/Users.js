@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const { data: users, isLoading } = useQuery('users', () => fetch('https://secure-fjord-78595.herokuapp.com/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://secure-fjord-78595.herokuapp.com/user', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -32,6 +32,7 @@ const Users = () => {
                                 index={index}
                                 key={user._id}
                                 user={user}
+                                refetch={refetch}
                             ></UserRow>)
                         }
                     </tbody>

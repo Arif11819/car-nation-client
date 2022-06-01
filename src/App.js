@@ -19,6 +19,7 @@ import MyOrders from './Pages/Dashboard/MyOrders';
 import AddAReview from './Pages/Dashboard/AddAReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import Users from './Pages/Dashboard/Users';
+import AddProduct from './Pages/AddProduct/AddProduct';
 function App() {
   return (
     <div>
@@ -45,6 +46,11 @@ function App() {
         <Route path='/manageparts' element={
           <RequireAuth>
             <ManageParts></ManageParts>
+          </RequireAuth>
+        }></Route>
+        <Route path='/addproduct' element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
           </RequireAuth>
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import useParts from '../../hooks/useParts';
 import ManagePart from './ManagePart';
 
