@@ -10,12 +10,13 @@ To deploy this project in firebase.
 
 ## Features
 
-- Look a beautiful banner.
-- Previews all 3 parts in home page.
-- Previews all parts in manage parts page.
+- Showing the different types of Parts, Our Business Summary, Customer Review,
+  Dashboard, Order Summary, All Users, etc implement carefully.
+- Multi-authentication system.
+- Login, Registration, Email verification, Reset password system added.
 - Fullscreen mode.
 - Clicking on a specific route , you can go there and if you go on wrong route , show 404 error route.
-- If you not Register/Login.
+- If you not RegisterPlease Login.
 
 ## List of using frameworks, libraries in this projects:
 
