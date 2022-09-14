@@ -1,15 +1,34 @@
 import React from 'react';
+import './BestServices.css'
+import { AiFillCheckCircle } from 'react-icons/ai';
 
 const BestServices = () => {
     return (
-        <div className="card lg:card-side my-24 mx-7 my-32 bg-green-700">
-            <figure><img className='px-8' src="https://images.unsplash.com/photo-1601411101851-ea0e07766235?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNhciUyMHBhcnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Album" /></figure>
-            <div className="card-body mx-10 my-16">
-                <h2 className="card-title text-5xl font-sans font-bold text-amber-500">Buy Your Best Product Here</h2>
-                <p className='font-sans font-bold'>Connect to the high-performance life. Follow us on our social networks to team up and get an inside view of our latest projects and ideas.</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Read More</button>
+        <div className="bg-slate-100 w-full h-[800px] grid grid-cols-2">
+            <div className='flex pt-24 pl-20 gap-6'>
+                <div>
+                    <div className='about-exp pb-7'>
+                        <h2>49+</h2>
+                    </div>
+                    <img className='rounded' src="https://themebeyond.com/html/carnation/carnation/img/images/about_img01.jpg" alt="" />
                 </div>
+                <div>
+                    <img className='rounded' src="https://themebeyond.com/html/carnation/carnation/img/images/about_img02.jpg" alt="" />
+                </div>
+
+            </div>
+            <div className='pt-32'>
+                <h4 className='text-rose-600 font-bold pb-3'>ABOUT OUR COMPANY</h4>
+                <h1 className='text-4xl text-black font-bold pb-8'>More For Trade-In Could <br /> Increase Car Here.</h1>
+                <div className='flex pb-8 gap-6'>
+                    <h1 className='text-7xl text-rose-600'>M</h1>
+                    <p className='pt-3 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam veritatis perferendis delectus voluptatibus laboriosam nesciunt nostrum tempora repellat. Quis?</p>
+                </div>
+                <p className='flex items-center gap-2 text-3xl font-semibold pb-2'><AiFillCheckCircle></AiFillCheckCircle><h2 className='text-[16px] text-black'> Sometimes known about us</h2></p>
+                <p className='flex items-center gap-2 text-3xl font-semibold pb-2'><AiFillCheckCircle></AiFillCheckCircle><h2 className='text-[16px] text-black'> Best solution for developing your business</h2></p>
+                <p className='flex items-center gap-2 text-3xl font-semibold pb-2'><AiFillCheckCircle></AiFillCheckCircle><h2 className='text-[16px] text-black'> Deserunt ad ipsum sint excepteur</h2></p>
+                <p className='flex items-center gap-2 text-3xl font-semibold pb-6'><AiFillCheckCircle></AiFillCheckCircle><h2 className='text-[16px] text-black'> Lorem sit occaecat ea proident excepteur</h2></p>
+                <button className='btn bg-rose-600 pl-8 pr-8'>LEARN MORE</button>
             </div>
         </div>
     );

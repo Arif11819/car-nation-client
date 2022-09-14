@@ -13,7 +13,6 @@ const ManageParts = () => {
                         key={part._id}
                         part={part}
                     >
-
                     </ManagePart>)
                 }
             </div>

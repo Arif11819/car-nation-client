@@ -27,9 +27,6 @@ const Footer = () => {
                     <a className="link link-hover">Cookie policy</a>
                 </div>
             </div>
-            <div className='text-center'>
-                <p className='text-3xl mt-20 font-sans font-semibold'>Copyright © {year} - All right reserved</p>
-            </div>
         </footer>
     );
 };

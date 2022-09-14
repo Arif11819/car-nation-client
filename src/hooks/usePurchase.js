@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 const usePurchase = partsId => {
     const [parts, setParts] = useState({});
 

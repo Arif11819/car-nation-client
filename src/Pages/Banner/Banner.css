@@ -1,0 +1,12 @@
+.banner-shape {
+    position: absolute;
+    left: 78%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}

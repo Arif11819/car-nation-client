@@ -1,0 +1,15 @@
+.about-exp>h2 {
+    font-size: 170px;
+    line-height: .8;
+    color: #fff;
+    letter-spacing: -5px;
+    margin-bottom: 0;
+    background: url(https://themebeyond.com/html/carnation/carnation/img/bg/text_bg.jpg) no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    background-size: cover;
+    background-position: top center;
+}
