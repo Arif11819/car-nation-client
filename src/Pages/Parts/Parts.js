@@ -20,7 +20,7 @@ const Parts = () => {
                 </div>
             </div>
             <div>
-                <img src="https://themebeyond.com/html/carnation/carnation/img/images/best_services_img01.jpg" alt="" />
+                <img src="https://i.ibb.co/pfvRfPM/best-services-img01.jpg" alt="" />
             </div>
             <div className='bg-black w-96 h-[335px]'>
                 <div className='pt-10 pl-12 font-bold'>
@@ -32,7 +32,7 @@ const Parts = () => {
                 </div>
             </div>
             <div>
-                <img src="https://themebeyond.com/html/carnation/carnation/img/images/best_services_img02.jpg" alt="" />
+                <img src="https://i.ibb.co/VWwywZF/best-services-img02.jpg" alt="" />
             </div>
         </div>
     );

@@ -47,7 +47,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <img className='pl-16' src="https://themebeyond.com/html/carnation/carnation/img/logo/b_logo.png" alt="" />
+                <img className='pl-16' src="https://i.ibb.co/BBBVZ69/b-logo.png" alt="" />
             </div>
 
 

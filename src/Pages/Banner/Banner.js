@@ -8,14 +8,14 @@ const Banner = () => {
         navigate('/manageparts');
     }
     return (
-        <div className="flex flex-row-reverse pt-20 pb-20">
+        <div className="flex flex-row-reverse justify-between pt-20 pb-20">
             <div className=''>
-                <img className='pt-20' src="https://themebeyond.com/html/carnation/carnation/img/slider/banner_img.png" alt="" />
-                <img className='banner-shape mt-20' src="https://themebeyond.com/html/carnation/carnation/img/slider/banner_shape.png" alt="" />
+                <img className='pt-20' src="https://i.ibb.co/w0rY95S/banner-img.png" alt="" />
+                <img className='banner-shape mt-20' src="https://i.ibb.co/fvrVbLJ/banner-shape.png" alt="" />
             </div>
             <div className='pl-20 pt-24'>
                 <h1 className='font-bold text-3xl text-amber-500 pb-4'>BEST CAR DEALER</h1>
-                <h1 className='font-extrabold text-6xl pb-4'>Popular Vehicle Dealership</h1>
+                <h1 className='font-extrabold text-6xl pb-4'>Popular Vehicle <br /> Dealership</h1>
                 <h3 className='font-semibold pb-4'>Find the Perfect Car With Our Car Finder Tool</h3>
                 <button onClick={handleNavigateTo} className='btn btn-warning'>DISCOVER MORE</button>
             </div>

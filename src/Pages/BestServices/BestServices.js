@@ -15,10 +15,10 @@ const BestServices = () => {
                     <div className='about-exp pb-7'>
                         <h2>49+</h2>
                     </div>
-                    <img className='rounded' src="https://themebeyond.com/html/carnation/carnation/img/images/about_img01.jpg" alt="" />
+                    <img className='rounded' src="https://i.ibb.co/M58TCN9/about-img01.jpg" alt="" />
                 </div>
                 <div>
-                    <img className='rounded' src="https://themebeyond.com/html/carnation/carnation/img/images/about_img02.jpg" alt="" />
+                    <img className='rounded' src="https://i.ibb.co/8Xw9Kdr/about-img02.jpg" alt="" />
                 </div>
 
             </div>
