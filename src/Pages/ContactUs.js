@@ -44,7 +44,7 @@ const ContactUs = () => {
                         </div>
                         <div>
                             <p>Email</p>
-                            <p>top.gear.perform007@gmail.com</p>
+                            <p>arifulislam11819@gmail.com</p>
                         </div>
                     </div>
                     <div className='flex lg:pl-0 pl-4 gap-4 text-black'>
