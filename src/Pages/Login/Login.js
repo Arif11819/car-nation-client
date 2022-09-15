@@ -103,7 +103,7 @@ const Login = () => {
                         {signInError} <br />
                         <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
                     </form>
-                    <p><small className='flex justify-center mt-2 font-semibold'>New to Our Side? <Link className='font-semibold text-rose-50 px-2' to='/signup'>Create new account</Link></small></p>
+                    <p><small className='flex justify-center mt-2 font-semibold'>New to Our Side? <Link className='font-semibold text-rose-700 px-2' to='/signup'>Create new account</Link></small></p>
 
                     <div className="divider font-semibold">OR</div>
                     <button

@@ -5,7 +5,7 @@ import { faDiagramProject, faFlag, faPeopleGroup } from '@fortawesome/free-solid
 const BusinessSummary = () => {
 
     return (
-        <div className='my-32'>
+        <div className='my-48'>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 my-20 mx-12'>
                 <div className='px-12'>
                     <p><FontAwesomeIcon className='w-72 h-40' icon={faFlag}></FontAwesomeIcon></p>

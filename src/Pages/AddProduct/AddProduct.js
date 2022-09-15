@@ -21,16 +21,18 @@ const AddProduct = () => {
         navigate('/manageparts');
     };
     return (
-        <div className='w-1/2 mx-80'>
-            <h2 className='my-4 text-center text-primary'>Add New Inventory</h2>
+        <div className='w-1/3 mx-auto mt-16'>
+            <h2 className='my-4 text-center font-bold text-4xl pb-5'>Add New Car Parts</h2>
             <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
-                <input className='my-1 border-2 border-neutral-800' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
-                <input className='my-1 border-2 border-neutral-800' placeholder='Photo URL' type="text" {...register("img")} />
-                <textarea className='my-1 border-2 border-neutral-800' placeholder='Description' {...register("description")} />
-                <input className='my-1 border-2 border-neutral-800' placeholder='Minimum Order Quantity' type="number" {...register("minimum_order_quantity")} />
-                <input className='my-1 border-2 border-neutral-800' placeholder='Available Quantity' type="number" {...register("available_quantity")} />
-                <input className='my-1 border-2 border-neutral-800' placeholder='Price' type="number" {...register("price")} />
-                <input className='btn btn-danger' type="submit" value="Add Product" />
+                <input className='my-1 border-2 border-neutral-800 h-[40px]' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+                <input className='my-1 border-2 border-neutral-800 h-[40px]' placeholder='Photo URL' type="text" {...register("img")} />
+                <textarea className='my-1 border-2 border-neutral-800 h-[170px]' placeholder='Description' {...register("description")} />
+                <input className='my-1 border-2 border-neutral-800 h-[40px]' placeholder='Minimum Order Quantity' type="number" {...register("minimum_order_quantity")} />
+                <input className='my-1 border-2 border-neutral-800 h-[40px]' placeholder='Available Quantity' type="number" {...register("available_quantity")} />
+                <input className='my-1 border-2 border-neutral-800 h-[40px]' placeholder='Price' type="number" {...register("price")} />
+                <div className='text-center mt-4'>
+                    <input className='btn bg-rose-600 w-1/2' type="submit" value="Add Product" />
+                </div>
             </form>
         </div>
     );

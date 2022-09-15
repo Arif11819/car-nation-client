@@ -30,20 +30,24 @@ const ManagePart = ({ part }) => {
     }
 
     return (
-        <div className="card bg-base-100 shadow-xl bg-gradient-to-r from-cyan-500 to-blue-500">
+        <div className="card bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
                 <img src={img} alt="Shoes" className="rounded-xl" />
             </figure>
-            <div className="card-body items-center text-center">
+            <div className="card-body">
                 <h2 className="card-title font-bold">{name}</h2>
                 <p>{description}</p>
                 <h2 className='text-1xl font-bold'>Minimum Order Quantity: {minimum_order_quantity}</h2>
                 <h2 className='text-1xl font-bold'>Available Quantity: {available_quantity}</h2>
                 <h2 className='text-1xl font-bold'>Price: ${price}</h2>
-                <div>
-                    <button onClick={() => handleNavigateToPurchase(_id)} className="btn btn-primary">Purchase Now</button>
+                <div className='flex justify-between mt-6'>
+                    <div>
+                        <button onClick={() => handleNavigateToPurchase(_id)} className="btn btn-info btn-sm">Purchase Now</button>
+                    </div>
+                    <div>
+                        <button onClick={() => handleDelete(part._id)} className='btn bg-rose-600 btn-sm'>Delete Product</button>
+                    </div>
                 </div>
-                <button onClick={() => handleDelete(part._id)} className='btn btn-danger'>Delete Product</button>
             </div>
         </div>
     );

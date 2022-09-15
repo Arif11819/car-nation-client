@@ -58,19 +58,19 @@ const BookingModal = ({ parts }) => {
                     <h3 class="font-bold text-3xl">Booking for: {name}</h3>
                     <form onSubmit={handleOrderQuantity}
                         className='flex flex-col items-center mt-6'>
-                        <h2 className='text-center text-5xl text-red-500 mb-5 font-sans font-bold'>Please Order</h2>
+                        <h2 className='text-center text-4xl text-red-500 mb-5  font-bold'>Please Order</h2>
                         <input type="text" disabled value={user?.displayName} className="input input-bordered input-primary w-2/6 block mt-2" />
                         <input type="text" disabled value={user?.email} className="input input-bordered input-primary w-2/6 block mt-2" /> <br />
 
-                        <p className='text-primary mb-2 font-sans font-bold'>Available Quantity:</p>
+                        <p className='mb-2 font-bold'>Available Quantity:</p>
                         <input type="text" id='available' disabled value={available_quantity} className="input input-bordered input-primary w-2/6 block mt-2" />
 
-                        <p className='text-primary mb-2 font-sans font-bold'>Minimum Order Quantity:</p>
+                        <p className='mb-2 font-bold'>Minimum Order Quantity:</p>
                         <input type="text" id='minimum-quantity' disabled value={minimum_order_quantity} className="input input-bordered input-primary w-2/6 block mt-2" /> <br />
 
-                        <p className='text-primary mb-2 font-sans font-bold'>Order Quantity:</p>
-                        <input type="number" id='order-quantity' className="input input-bordered input-primary w-2/6 block mt-2" />
-                        <button className='btn btn-primary mt-3'>Order Now</button>
+                        <p className='mb-2 font-bold'>Order Quantity:</p>
+                        <input type="number" id='order-quantity' className="input input-bordered w-2/6 block mt-2" />
+                        <button className='btn btn-sm bg-rose-500 px-10 mt-3'>Order Now</button>
                     </form>
                 </div>
             </div>

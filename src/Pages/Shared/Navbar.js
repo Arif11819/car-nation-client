@@ -31,7 +31,7 @@ const Navbar = () => {
         {
             user && <>
                 <li className='font-bold'><Link to='/dashboard'>Dashboard</Link></li>
-                <li className='font-bold'><Link to='/manageparts'>Manage Parts</Link></li>
+                <li className='font-bold'><Link to='/manageparts'>Parts</Link></li>
                 {admin && <li className='font-bold'><Link to='/addproduct'>Add Product</Link></li>}
             </>
         }
@@ -51,7 +51,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className="navbar-center hidden lg:flex pl-36">
+            <div className="navbar-center hidden lg:flex pl-96">
                 <ul className="menu menu-horizontal p-0">
                     {menuItems}
                 </ul>

@@ -16,10 +16,10 @@ import Review from './Review/Review';
 import ContactUs from './Pages/ContactUs';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
-import AddAReview from './Pages/Dashboard/AddAReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import Users from './Pages/Dashboard/Users';
 import AddProduct from './Pages/AddProduct/AddProduct';
+import AddReview from './Pages/Home/AddReview';
 function App() {
   return (
     <div>
@@ -34,7 +34,7 @@ function App() {
         <Route path='/myportfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>
           <Route index element={<MyOrders></MyOrders>}></Route>
-          <Route path='addreview' element={<AddAReview></AddAReview>}></Route>
+          <Route path='addreview' element={<AddReview></AddReview>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
           <Route path='users' element={<Users></Users>}></Route>
         </Route>

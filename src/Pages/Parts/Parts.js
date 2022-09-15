@@ -1,8 +1,13 @@
 
 import './Parts.css';
+import { useNavigate } from 'react-router-dom';
 import { AiOutlineStar } from 'react-icons/ai';
 
 const Parts = () => {
+    const navigate = useNavigate();
+    const handleNavigateTo = () => {
+        navigate('/manageparts');
+    }
     return (
         <div className='flex mt-32'>
             <div className='bg-red-500 w-96 h-[335px]'>
@@ -11,7 +16,7 @@ const Parts = () => {
                     <h1 className='text-3xl pb-4 text-white'>Advanced Vehicle Repair Service</h1>
                     <p className='flex pb-4 text-white'><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar></p>
                     <p className='pb-4 text-3xl text-white'>$23500</p>
-                    <button className='btn bg-white text-rose-600'>Buy Now</button>
+                    <button onClick={handleNavigateTo} className='btn bg-white text-rose-600'>Buy Now</button>
                 </div>
             </div>
             <div>
@@ -23,7 +28,7 @@ const Parts = () => {
                     <h1 className='text-3xl pb-4 text-white'>Servicing 5 Years Guarantee</h1>
                     <p className='flex pb-4 text-rose-600'><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar><AiOutlineStar></AiOutlineStar></p>
                     <p className='pb-4 text-3xl text-rose-600'>$23500</p>
-                    <button className='btn bg-white text-rose-600'>Buy Now</button>
+                    <button onClick={handleNavigateTo} className='btn bg-white text-rose-600'>Buy Now</button>
                 </div>
             </div>
             <div>
