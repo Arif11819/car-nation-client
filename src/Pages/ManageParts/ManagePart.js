@@ -1,11 +1,16 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
+import useAdmin from '../../hooks/useAdmin';
 import useParts from '../../hooks/useParts';
 
 const ManagePart = ({ part }) => {
     const { _id, name, img, description, minimum_order_quantity, available_quantity, price } = part;
 
     const [parts, setParts] = useParts();
+    const [user] = useAuthState(auth);
+    const [admin] = useAdmin(user);
 
     const navigate = useNavigate();
 
@@ -44,9 +49,9 @@ const ManagePart = ({ part }) => {
                     <div>
                         <button onClick={() => handleNavigateToPurchase(_id)} className="btn btn-info btn-sm">Purchase Now</button>
                     </div>
-                    <div>
+                    {admin && <div>
                         <button onClick={() => handleDelete(part._id)} className='btn bg-rose-600 btn-sm'>Delete Product</button>
-                    </div>
+                    </div>}
                 </div>
             </div>
         </div>
