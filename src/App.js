@@ -20,6 +20,12 @@ import MyProfile from './Pages/Dashboard/MyProfile';
 import Users from './Pages/Dashboard/Users';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import AddReview from './Pages/Home/AddReview';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 function App() {
   return (
     <div>

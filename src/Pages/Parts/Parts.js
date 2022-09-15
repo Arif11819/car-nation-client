@@ -10,7 +10,9 @@ const Parts = () => {
     }
     return (
         <div className='flex mt-32'>
-            <div className='bg-red-500 w-96 h-[335px]'>
+            <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" className='bg-red-500 w-96 h-[335px]'>
                 <div className='pt-10 pl-12 font-bold'>
                     <h2 className='pb-3 text-white'>USED CAR / BRAND NEW</h2>
                     <h1 className='text-3xl pb-4 text-white'>Advanced Vehicle Repair Service</h1>
@@ -19,10 +21,12 @@ const Parts = () => {
                     <button onClick={handleNavigateTo} className='btn bg-white text-rose-600'>Buy Now</button>
                 </div>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
                 <img src="https://i.ibb.co/pfvRfPM/best-services-img01.jpg" alt="" />
             </div>
-            <div className='bg-black w-96 h-[335px]'>
+            <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" className='bg-black w-96 h-[335px]'>
                 <div className='pt-10 pl-12 font-bold'>
                     <h2 className='pb-3 text-white'>ENGINE / <span className='text-rose-600'>BRAND NEW</span></h2>
                     <h1 className='text-3xl pb-4 text-white'>Servicing 5 Years Guarantee</h1>
@@ -31,7 +35,7 @@ const Parts = () => {
                     <button onClick={handleNavigateTo} className='btn bg-white text-rose-600'>Buy Now</button>
                 </div>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="1000">
                 <img src="https://i.ibb.co/VWwywZF/best-services-img02.jpg" alt="" />
             </div>
         </div>
