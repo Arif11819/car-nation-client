@@ -20,7 +20,7 @@ const Navbar = () => {
     const menuItems = <>
         <li className='font-bold'><Link to='/'>Home</Link></li>
         <div className="dropdown dropdown-hover cursor-pointer dropdown-container pt-3 font-bold">
-            <label tabIndex="0">Pages</label>
+            <label className='pl-4 lg:pr-3' tabIndex="0">Pages</label>
             <ul tabIndex="0" className="dropdown-content menu w-32">
                 <li className=''><Link to='/blogs'>Blogs</Link></li>
                 <li className=''><Link to='/review'>Reviews</Link></li>
@@ -42,14 +42,8 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar-start">
-                <div className="dropdown">
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 w-52">
-                        {menuItems}
-                    </ul>
-                </div>
-                <img className='pl-16' src="https://i.ibb.co/BBBVZ69/b-logo.png" alt="" />
+                <img className='lg:pl-16 pl-4' src="https://i.ibb.co/BBBVZ69/b-logo.png" alt="" />
             </div>
-
 
             <div className="navbar-center hidden lg:flex pl-96">
                 <ul className="menu menu-horizontal p-0">
@@ -57,9 +51,14 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navber-end">
-                <label tabIndex="1" for="dashboard-sidebar" className="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
+                <div className="dropdown">
+                    <label tabindex="0" className="btn btn-ghost lg:hidden pl-36">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" className="menu menu-compact lg:hidden dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        {menuItems}
+                    </ul>
+                </div>
             </div>
         </div>
     );
