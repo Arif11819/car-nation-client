@@ -10,7 +10,7 @@ const AddReview = () => {
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
     const onSubmit = data => {
-        const url = `https://secure-fjord-78595.herokuapp.com/reviews`;
+        const url = `https://car-nation-server.vercel.app/reviews`;
         fetch(url, {
             method: 'POST',
             headers: {

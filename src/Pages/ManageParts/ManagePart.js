@@ -21,7 +21,7 @@ const ManagePart = ({ part }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure delete this?');
         if (proceed) {
-            const url = `https://secure-fjord-78595.herokuapp.com/parts/${id}`;
+            const url = `https://car-nation-server.vercel.app/parts/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

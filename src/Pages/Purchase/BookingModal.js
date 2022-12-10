@@ -35,7 +35,7 @@ const BookingModal = ({ parts }) => {
             orderQuantityValue
         }
 
-        fetch('https://secure-fjord-78595.herokuapp.com/booking', {
+        fetch('https://car-nation-server.vercel.app/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

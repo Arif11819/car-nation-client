@@ -6,7 +6,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const navigate = useNavigate();
     const onSubmit = data => {
-        const url = `https://secure-fjord-78595.herokuapp.com/parts`;
+        const url = `https://car-nation-server.vercel.app/parts`;
         fetch(url, {
             method: 'POST',
             headers: {
