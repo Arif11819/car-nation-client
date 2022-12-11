@@ -35,7 +35,7 @@ const BookingModal = ({ parts }) => {
             orderQuantityValue
         }
 
-        fetch('https://car-nation-server.vercel.app/booking', {
+        fetch('https://car-nation-server.up.railway.app/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

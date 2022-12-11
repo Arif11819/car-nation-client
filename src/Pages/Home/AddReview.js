@@ -10,7 +10,7 @@ const AddReview = () => {
     const navigate = useNavigate();
     const [user] = useAuthState(auth);
     const onSubmit = data => {
-        const url = `https://car-nation-server.vercel.app/reviews`;
+        const url = `https://car-nation-server.up.railway.app/reviews`;
         fetch(url, {
             method: 'POST',
             headers: {

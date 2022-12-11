@@ -18,7 +18,7 @@ const Review = ({ review }) => {
         const proceed = window.confirm('Are you sure delete this?');
 
         if (proceed) {
-            const url = `https://car-nation-server.vercel.app/reviews/${id}`;
+            const url = `https://car-nation-server.up.railway.app/reviews/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

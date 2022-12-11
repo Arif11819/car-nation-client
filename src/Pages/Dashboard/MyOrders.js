@@ -11,7 +11,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://car-nation-server.vercel.app/booking?customer=${user.email}`, {
+            fetch(`https://car-nation-server.up.railway.app/booking?customer=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`

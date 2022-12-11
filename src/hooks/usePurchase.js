@@ -3,7 +3,7 @@ const usePurchase = partsId => {
     const [parts, setParts] = useState({});
 
     useEffect(() => {
-        const url = `https://car-nation-server.vercel.app/parts/${partsId}`;
+        const url = `https://car-nation-server.up.railway.app/parts/${partsId}`;
 
         fetch(url)
             .then(res => res.json())

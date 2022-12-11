@@ -21,7 +21,7 @@ const ManagePart = ({ part }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure delete this?');
         if (proceed) {
-            const url = `https://car-nation-server.vercel.app/parts/${id}`;
+            const url = `https://car-nation-server.up.railway.app/parts/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
