@@ -2,6 +2,8 @@
 import './Parts.css';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineStar } from 'react-icons/ai';
+import services1 from '../../images/best_services_img01.jpg';
+import services2 from '../../images/best_services_img02.jpg';
 
 const Parts = () => {
     const navigate = useNavigate();
@@ -22,7 +24,7 @@ const Parts = () => {
                 </div>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000">
-                <img src="https://i.ibb.co/pfvRfPM/best-services-img01.jpg" alt="" />
+                <img src={services1} alt="" />
             </div>
             <div data-aos="flip-left"
                 data-aos-easing="ease-out-cubic"
@@ -36,7 +38,7 @@ const Parts = () => {
                 </div>
             </div>
             <div data-aos="zoom-in" data-aos-duration="1000">
-                <img src="https://i.ibb.co/VWwywZF/best-services-img02.jpg" alt="" />
+                <img src={services2} alt="" />
             </div>
         </div>
     );

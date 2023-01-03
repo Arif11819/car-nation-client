@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import banner from '../../images/banner_img.png';
+import bannerShape from '../../images/banner_shape.png';
 import './Banner.css'
 
 const Banner = () => {
@@ -11,8 +13,8 @@ const Banner = () => {
         <div className="lg:flex lg:flex-row-reverse lg:justify-between lg:pt-20 lg:pb-20">
             <div data-aos="fade-left" className=''
                 data-aos-duration="1000">
-                <img className='lg:pt-20 pt-28 w-80 ml-12 lg:ml-0 lg:w-full' src="https://i.ibb.co/w0rY95S/banner-img.png" alt="" />
-                <img className='banner-shape mt-20' src="https://i.ibb.co/fvrVbLJ/banner-shape.png" alt="" />
+                <img className='lg:pt-20 pt-28 w-80 ml-12 lg:ml-0 lg:w-full' src={banner} alt="" />
+                <img className='banner-shape mt-20' src={bannerShape} alt="" />
             </div>
             <div data-aos="fade-right"
                 data-aos-duration="1000" className='pl-20 pt-24'>

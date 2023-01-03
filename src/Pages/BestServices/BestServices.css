@@ -4,7 +4,7 @@
     color: #fff;
     letter-spacing: -5px;
     margin-bottom: 0;
-    background: url(https://i.ibb.co/SnYzbbk/text-bg.jpg) no-repeat;
+    background: url('../../images/text_bg.jpg') no-repeat;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

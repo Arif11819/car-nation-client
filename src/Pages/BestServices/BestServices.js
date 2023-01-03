@@ -2,6 +2,8 @@ import React from 'react';
 import './BestServices.css'
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
+import about1 from '../../images/about_img01.jpg';
+import about2 from '../../images/about_img02.jpg';
 
 const BestServices = () => {
     const navigate = useNavigate();
@@ -15,10 +17,10 @@ const BestServices = () => {
                     <div className='about-exp pb-7'>
                         <h2>49+</h2>
                     </div>
-                    <img className='rounded' src="https://i.ibb.co/M58TCN9/about-img01.jpg" alt="" />
+                    <img className='rounded' src={about1} alt="" />
                 </div>
                 <div>
-                    <img className='rounded' src="https://i.ibb.co/8Xw9Kdr/about-img02.jpg" alt="" />
+                    <img className='rounded' src={about2} alt="" />
                 </div>
             </div>
             <div className='pt-32 pl-4'>

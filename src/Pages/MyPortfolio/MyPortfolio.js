@@ -1,11 +1,12 @@
 import React from 'react';
+import myImg from '../../images/279926739-1322176401592416-7681994299822122901-n-removebg.jpg';
 
 const MyPortfolio = () => {
     return (
         <div className='mx-20 my-20'>
             <div class="avatar mb-20 flex justify-center items-center">
                 <div class="w-64 rounded-full">
-                    <img src="https://i.ibb.co/b5k4jFX/279926739-1322176401592416-7681994299822122901-n-removebg.jpg" alt="" />
+                    <img src={myImg} alt="" />
                 </div>
             </div>
             <p>

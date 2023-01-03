@@ -4,6 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 import useAdmin from '../../hooks/useAdmin';
+import logo from '../../images/b_logo.png'
 
 
 const Navbar = () => {
@@ -42,7 +43,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar-start">
-                <img className='lg:pl-16 pl-4' src="https://i.ibb.co/BBBVZ69/b-logo.png" alt="" />
+                <img className='lg:pl-16 pl-4' src={logo} alt="" />
             </div>
 
             <div className="navbar-center hidden lg:flex pl-96">
